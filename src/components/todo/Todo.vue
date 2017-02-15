@@ -28,7 +28,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
     h4 {
         color: #42b983;
     }
