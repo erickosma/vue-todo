@@ -1,6 +1,5 @@
 <template>
     <div class="jumbotron">
-        <todo></todo>
         <md-button class="md-icon-button md-raised">
             <md-icon>add</md-icon>
         </md-button>
@@ -28,12 +27,5 @@
 </template>
 
 <script>
-    import Hello from './Hello.vue'
-    import Todo from './todo/Todo.vue'
-    export default {
-        components: {
-            Hello,
-            Todo
-        }
-    }
+
 </script>

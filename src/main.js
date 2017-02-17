@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Home from './components/Home.vue'
+import Home from './components/controllers/Home.vue'
 import jQuery from 'jquery'
 global.jQuery = jQuery
 //var Bootstrap = require('bootstrap')
@@ -18,16 +18,32 @@ Vue.use(VueMaterial)
 
 
 Vue.material.registerTheme('default', {
-    primary: 'blue',
-    accent: 'red',
-    warn: 'red',
-    background: 'grey'
+    primary: { color: 'cyan',
+        hue: 'A700'
+    },
+    //accent: 'light-blue',
+    warn: 'deep-orange',
+    background: 'white'
 });
-
-const Completa = { template: '<div>bar</div>' }
+/*
+Vue.material.registerTheme({
+    app: {
+        primary: { color: 'indigo',
+            hue: 'A200'
+        } //'cyan'
+    },
+    about: {
+        primary: 'indigo'
+    },
+    contact: {
+        primary: 'teal'
+    }
+});
+*/
+const Task = { template: '<div>bar</div>' }
 const routes = [
     { path: '/',   name: 'home', component: Home },
-    { path: '/completa',  name: 'completas', component:Completa }
+    { path: '/tasks',  name: 'tasks', component:Task }
 ]
 
 const router = new VueRouter({

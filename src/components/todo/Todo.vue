@@ -9,7 +9,7 @@
     export default {
         data () {
             return {
-                firstName: 'John',
+                firstName: 'teste',
                 lastName: 'Oliver',
                 description: 'Comedian, political commentator and tv host.'
             }
